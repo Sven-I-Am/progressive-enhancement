@@ -1,0 +1,256 @@
+/*XXXXXXXXXXXXX*/
+/* BASIC SETUP */
+/*XXXXXXXXXXXXX*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    min-height: 100vh;
+}
+
+body {
+    max-width: 90%;
+    margin: auto;
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("/IMG/teaFields.jpg");
+    background-size: cover;
+    background-position: bottom right;
+    background-attachment: fixed;
+}
+
+section {
+    max-width: 1140px;
+    margin: 20px auto;
+    color: #555;
+}
+
+H1,
+H2,
+H3,
+H4{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+H3 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3:after {
+    display: block;
+    height: 2px;
+    background-color: #0F4C64;
+    content: " ";
+    width: 100px;
+    margin: 15px auto;
+}
+
+figcaption {
+    font-size: 12px;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+}
+
+a:hover {
+    font-size: 105%;
+}
+
+a:link, a:visited {
+    color: #0F4C64;
+    text-decoration: underline;
+    cursor: crosshair;
+}
+
+a:link:active, a:visited:active {
+    color: #583c75;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #0F4C64;
+    color: #eee;
+    font-size: 80%;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    top: -1.6em;
+    left: -10%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+}
+
+[data-title] {
+    position: relative;
+}
+
+/*XXXXXXXXXXXXX*/
+/*    HEADER   */
+/*XXXXXXXXXXXXX*/
+
+header {
+    margin: 10px 10px 0 10px;
+    padding:10px;
+    background:linear-gradient(rgba(200,200,50,0.7), rgba(200,200,50,0.7));
+    text-align: center;
+}
+
+/*XXXXXXXXXXXXX*/
+/*  PREAMBLE   */
+/*XXXXXXXXXXXXX*/
+
+.preamble {
+   padding: 0 5%;
+}
+
+.preamble-image {
+    float: left;
+}
+
+.preamble-image img {
+    width: 90%;
+    border-radius: 10%;
+}
+
+.preamble-text {
+    float: right;
+}
+
+.preamble-text ol {
+    margin-left: 30px;
+    line-height: 1.5;
+}
+
+/*XXXXXXXXXXXXX*/
+/*    STORY    */
+/*XXXXXXXXXXXXX*/
+
+.story-text {
+    float: left;
+    line-height: 1.2;
+}
+
+p:first-of-type {
+    font-weight: bold;
+}
+
+.neighbour,
+.farmer {
+    display: block;
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 2%;
+    width: 50%;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.neighbour {
+    border-left: dashed #0F4C64;
+}
+
+.farmer {
+    border-left: dashed #583c75;
+}
+
+.bad {
+    color: #941921;
+    text-transform: uppercase;
+}
+
+.good {
+    color: #3d7038;
+    text-transform: uppercase;
+}
+
+.story-dialogue {
+    float: right;
+}
+
+blockquote {
+    margin: 20px;
+    font-size: 90%;
+}
+
+cite {
+    font-size: 80%;
+}
+
+cite:before {
+    content: "~"
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 2px#0F4C64;
+    padding: 5px;
+}
+
+th,
+td {
+    border: dashed 1px;
+    padding: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.caption {
+    font-size: 12px;
+    margin-left: 5%;
+}
+
+/*XXXXXXXXXXXXX*/
+/* CONCLUSION  */
+/*XXXXXXXXXXXXX*/
+
+.conclusion {
+    width: 80%;
+    text-align: center;
+}
+
+/*XXXXXXXXXXXXX*/
+/*   FOOTER    */
+/*XXXXXXXXXXXXX*/
+
+footer {
+    background-color: #eee;
+    font-size: 16px;
+    height: 50px;
+    padding: 17px;
+    margin-top: 30px;
+}
+
+.copy {
+    float: left;
+}
+
+.article {
+    float: right;
+}
