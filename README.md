@@ -7,3 +7,4 @@ To structure a html document with semantics and style it using css.
 1 day
 
 ## Link to the published page
+https://sven-i-am.github.io/progressive-enhancement/
